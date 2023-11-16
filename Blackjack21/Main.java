@@ -2,6 +2,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import Exception.ExcecaoPorNomeInvalido;
+
 public class Main {
     public static void main(String[] args) {
         List<String> nomesJogadores = new ArrayList<>();
