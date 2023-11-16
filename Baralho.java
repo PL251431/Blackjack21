@@ -1,10 +1,12 @@
 import java.util.ArrayList;
 import java.util.List;
 
+//File feita usando o padrão de projeto Singleton
 public class Baralho {
     private static Baralho instance;
     private List<Carta> cartas;
 
+    // Define-se aqui quais são todos os naipes e valores dentro do baralho do jogo
     private Baralho() {
         cartas = new ArrayList<>();
         String[] naipes = {"♦", "♠", "♣", "♥"};
@@ -17,6 +19,7 @@ public class Baralho {
         }
     }
 
+    //Método para criar uma instância sozinha 
     public static Baralho getInstance() {
         if (instance == null) {
             instance = new Baralho();
@@ -24,6 +27,7 @@ public class Baralho {
         return instance;
     }
 
+    //Método para embaralhar o baralho
     public void embaralhar() {
         for (int i = cartas.size() - 1; i > 0; i--) {
             int j = (int) (Math.random() * (i + 1));
@@ -33,6 +37,7 @@ public class Baralho {
         }
     }
 
+    //Método para retirar uma carta
     public Carta retirarCarta() {
         if (cartas.isEmpty()) {
             return null;

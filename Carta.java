@@ -6,7 +6,7 @@ public class Carta {
         this.valor = valor;
         this.naipe = naipe;
     }
-
+// Método get que inclue os valores das cartas normais e os valores diferenciados para o ÁS,J,Q,K
     public int getValor() {
         if (valor.equals("J") || valor.equals("Q") || valor.equals("K")) {
             return 10;

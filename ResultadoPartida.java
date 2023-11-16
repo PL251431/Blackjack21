@@ -6,25 +6,26 @@ public class ResultadoPartida {
     private Map<String, Integer> pontuações;
     private List<Jogador> vencedor;
 
+    //Método getters
     public String getTipo() {
         return tipo;
     }
 
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-
-    
-public Map<String, Integer> getPontuações() {
+    public Map<String, Integer> getPontuações() {
         return pontuações;
-    }
-
-    public void setPontuações(Map<String, Integer> pontuações) {
-        this.pontuações = pontuações;
     }
 
     public List<Jogador> getVencedores() {
         return vencedor;
+    }
+
+    //Método setters
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+    
+    public void setPontuações(Map<String, Integer> pontuações) {
+        this.pontuações = pontuações;
     }
 
     public void setVencedores(List<Jogador> vencedores) {

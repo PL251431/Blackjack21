@@ -23,6 +23,7 @@ public class Main {
         scan.close();
     }
 
+    // 
     private static void obterNomesJogadores(List<String> nomesJogadores, Scanner scan) throws ExcecaoPorNomeInvalido {
         for (int i = 1; i <= 2; i++) {
             System.out.print("INSIRA O NOME DO PLAYER " + i + ": ");
