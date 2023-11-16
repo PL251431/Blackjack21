@@ -9,7 +9,7 @@ public class Baralho {
     // Define-se aqui quais são todos os naipes e valores dentro do baralho do jogo
     private Baralho() {
         cartas = new ArrayList<>();
-        String[] naipes = {"♦", "♠", "♣", "♥"};
+        String[] naipes = {"ESPADAS", "PAUS", "COPAS", "OURO"};
         String[] valores = {"A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
 
         for (String naipe : naipes) {

@@ -175,7 +175,7 @@ public class Blackjack21 {
         return escolha.equals("S");
     }
 
-    //Método que vai ser usado para exibir os resultados de toas as partidas anteriores
+    //Método que vai ser usado para exibir os resultados de todas as partidas anteriores
     private void exibirResultadosFinaisDoJogo() {
         System.out.println("Resultados finais dos jogos:\n");
 
